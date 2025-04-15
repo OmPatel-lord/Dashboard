@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 text-gray-900">
+    <!-- Sidebar -->
+    <div class="flex min-h-screen">
+      <aside class="w-64 bg-white shadow hidden md:block">
+        <div class="p-4 font-bold text-xl">Dashboard</div>
+        <nav class="p-4">
+          <ul>
+            <li class="mb-2"><a href="#" class="block p-2 hover:bg-gray-200 rounded">Home</a></li>
+            <li class="mb-2"><a href="#" class="block p-2 hover:bg-gray-200 rounded">Analytics</a></li>
+            <li class="mb-2"><a href="#" class="block p-2 hover:bg-gray-200 rounded">Settings</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="flex-1 p-6">
+        <header class="mb-6">
+          <h1 class="text-2xl font-bold">Welcome </h1>
+          <p class="text-sm text-gray-500">This is the simple dashboard that shows the responsivness</p>
+        </header>
+
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div class="bg-white p-4 rounded shadow">
+            <h2 class="font-semibold text-lg">Users</h2>
+            <p class="text-2xl font-bold">1,200</p>
+          </div>
+          <div class="bg-white p-4 rounded shadow">
+            <h2 class="font-semibold text-lg">Sales</h2>
+            <p class="text-2xl font-bold">$34,000</p>
+          </div>
+          <div class="bg-white p-4 rounded shadow">
+            <h2 class="font-semibold text-lg">Performance</h2>
+            <p class="text-2xl font-bold">87%</p>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
